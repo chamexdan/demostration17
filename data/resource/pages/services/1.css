@@ -1,0 +1,173 @@
+.experiences {
+    display: flex;
+    flex-direction: column;
+    margin: 150px;
+    
+  }
+  
+.empty img{
+    height: 150px;
+    margin: 25%;
+    
+}
+
+  .experiences-body {
+    background-color: #124f88;
+    color: whitesmoke;
+  }
+  .wave {
+    width: 100%;
+    position: relative;
+    top: 2px;
+  }
+  
+  .wave_bottom {
+    transform: scaleY(-1);
+    top: -2px;
+  }
+  
+  .experiences-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+  }
+  
+  .experience-date {
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  
+  .experience-company {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+
+  }
+  
+  .experience-position {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+    
+  }
+  
+  .experience-description {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
+  .experience {
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+    
+  }
+  
+  @media (min-width: 950px) {
+    .experiences-title {
+      font-size: 50px;
+      margin: 35px 0;
+    }
+  
+    .experience-date {
+      font-size: 30px;
+    }
+  
+    .experience-company {
+      font-size: 25px;
+    }
+  
+    .experience-position {
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  
+    .experience-description {
+      font-size: 20px;
+      margin-top: 10px;
+      line-height: 1.3;
+    }
+  
+    .experience {
+      padding: 0;
+    }
+  
+    .experience_left {
+      text-align: right;
+    }
+  
+    .experiences-grid {
+      display: grid;
+      grid-template-columns: auto 2px auto;
+      gap: 20px 70px;
+      padding: 70px;
+      justify-content: center;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+  
+    .line {
+      background-color: rgb(175, 76, 5, 0.8);
+      position: relative;
+      
+    }
+
+    .line2 {
+        background-color: rgb(175, 76, 5, 0.8);
+        position: relative;
+        
+      }
+
+    
+  
+    .line::before,
+    .line::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-color: rgb(175, 76, 5, 0.8);
+      border-radius: 50%;
+  
+      position: absolute;
+      top: -20px;
+      left: -9px;
+    }
+    .line2::before,
+    .line2::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 1px;
+      background-color: rgb(175, 76, 5, 0.8);
+      border-radius: 50%;
+  
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  
+    .line::after {
+      top: 100%;
+      z-index: 1;
+    }
+    .line2::after {
+        top: 100%;
+        z-index: 1;
+      }
+
+  }
+
+  @media (max-width: 950px) {
+    .empty img{
+        display:none;
+    }
+    .experiences {
+        margin: 0;
+      }
+  }
